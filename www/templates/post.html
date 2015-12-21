@@ -1,0 +1,38 @@
+<ion-view>
+	<ion-nav-title>
+		{{ post.title | decode}}
+	</ion-nav-title>
+	<ion-content>
+		<div class="list card">
+			<div class="item">
+				<h2>{{post.title | decode}}</h2>
+				<p>by {{post.author.name}}</p>
+			</div>
+			<div class="item item-body" ng-bind-html="post.html | decode">
+			</div>
+			<div class="item item-body">
+				{{post.html | decode}}
+			</div>
+			<div class="item item-body">
+				{{post.markdown | decode}}
+			</div>
+
+			<!--
+			<div class="item tabs tabs-secondary tabs-icon-left">
+				<a class="tab-item">
+					<i class="icon ion-thumbsup"></i>
+					Like
+				</a>
+				<a class="tab-item">
+					<i class="icon ion-chatbox"></i>
+					Comment
+				</a>
+				<a class="tab-item">
+					<i class="icon ion-share"></i>
+					Share
+				</a>
+			</div>
+			-->
+		</div>
+	</ion-content>
+</ion-view>

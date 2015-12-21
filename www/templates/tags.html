@@ -1,0 +1,8 @@
+<ion-view view-title="Tags">
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat="tag in tags"
+								href="#/app/tags/{{tag.slug}}">{{tag.name | decode}}</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
