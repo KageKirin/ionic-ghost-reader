@@ -1,0 +1,8 @@
+angular.module('starter.globals', [])
+
+.constant('ConnectionHeaders', {
+	'Authorization':'Bearer H8sFvVSrDFCxtixmZkMeTa4NaIm1EZMq3sSf08aJcULoVFxFrcGyyl9Rqns9R7DtvtCATyligoXxU0WgaKkF0QxUwnJ5aHjfbBBinoLlYjoxwv2tD4TI8yr5ZwlFf81NcuJvfk9L9DTDoibDc3c0qIbUeQQ7yUC4tSfKP3ChZwlbkEoc7FPseqQG8nzufBZsZltoxIPfSTBKBoXcDYIJK5tmai3IB8xiAL3ocow1HCR18hxfHsyIuE70rjelCKk'
+})
+
+
+;
