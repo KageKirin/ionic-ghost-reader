@@ -77,6 +77,27 @@ var starter = angular.module('starter', [
 			}
 		}
 	})
+	//post states
+	.state('app.posts', {
+		url: "/posts",
+		views: {
+				'menuContent': {
+						templateUrl: "templates/posts.html",
+						controller: 'BlogPostListCtrl'
+				}
+		}
+	})
+
+	.state('app.post', {
+		url: "/posts/:postId",
+		views: {
+				'menuContent': {
+					templateUrl: "templates/post.html",
+					controller: 'BlogPostCtrl'
+			}
+		}
+	})
+
 	//cover state
 	.state('app.cover', {
 		url: "/cover",
