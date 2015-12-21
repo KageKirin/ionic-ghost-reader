@@ -40,6 +40,16 @@ var starter = angular.module('starter', [
 		controller: 'BlogTagListCtrl'
 	})
 
+	//cover state
+	.state('app.cover', {
+		url: "/cover",
+		views: {
+				'menuContent': {
+					templateUrl: "templates/cover.html"
+			}
+		}
+	})
+
 	.state('app.search', {
 		url: '/search',
 		views: {
@@ -75,16 +85,6 @@ var starter = angular.module('starter', [
 				'menuContent': {
 					templateUrl: "templates/post.html",
 					controller: 'BlogPostCtrl'
-			}
-		}
-	})
-
-	//cover state
-	.state('app.cover', {
-		url: "/cover",
-		views: {
-				'menuContent': {
-					templateUrl: "templates/cover.html"
 			}
 		}
 	})
