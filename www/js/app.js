@@ -50,6 +50,18 @@ var starter = angular.module('starter', [
 		}
 	})
 
+	//per-tag post list
+	.state('app.tag', {
+		url: "/tags/:tagId",
+		views: {
+				'menuContent': {
+					templateUrl: "templates/tag_postlist.html",
+					controller: 'BlogTagCtrl'
+			}
+		}
+	})
+
+
 	.state('app.search', {
 		url: '/search',
 		views: {
@@ -101,15 +113,7 @@ var starter = angular.module('starter', [
 		}
 	})
 
-	.state('app.tag', {
-		url: "/tags/:tagId",
-		views: {
-				'menuContent': {
-					templateUrl: "templates/tag.html",
-					controller: 'BlogTagCtrl'
-			}
-		}
-	})
+
 
 
 	//user states
