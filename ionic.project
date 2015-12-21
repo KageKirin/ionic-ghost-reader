@@ -1,0 +1,22 @@
+{
+	"name": "ionic-frontend",
+	"app_id": "",
+	"proxies": [
+		{
+			"path": "/api/posts",
+			"proxyUrl": "http://localhost:2368/ghost/api/v0.1/posts/"
+		},
+		{
+			"path": "/api/tags",
+			"proxyUrl": "http://localhost:2368/ghost/api/v0.1/tags/"
+		},
+		{
+			"path": "/api/users",
+			"proxyUrl": "http://localhost:2368/ghost/api/v0.1/users/"
+		},
+		{
+			"path": "/api/blog",
+			"proxyUrl": "http://localhost:2368/"
+		}
+	]
+}
