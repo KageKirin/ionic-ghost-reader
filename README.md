@@ -1,6 +1,7 @@
-# Ionic-Ghost-Reader
+# Ionic-KyokushindoApp
 
-This is a minimal [Ionic](http://ionicframework.com/) app that can read data from a [Ghost](https://github.com/tryghost/Ghost) blog.
+Kyokushindo App using [Ionic](http://ionicframework.com/) for frontend
+and [Ghost](https://github.com/tryghost/Ghost) blog as backend.
 
 ## Requirements
 
