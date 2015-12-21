@@ -79,6 +79,17 @@ var starter = angular.module('starter', [
 		}
 	})
 
+	//video view
+	.state('app.video', {
+		url: "/videos/:videoId",
+		views: {
+				'menuContent': {
+					templateUrl: "templates/video.html",
+					controller: 'VideoCtrl'
+			}
+		}
+	})
+
 	//closing semicolon follows
 	;
 
