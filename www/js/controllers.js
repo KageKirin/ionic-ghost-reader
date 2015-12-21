@@ -1,4 +1,7 @@
-angular.module('starter.controllers', ['starter.services'])
+angular.module('starter.controllers', [
+	'starter.services',
+	'starter.filters'
+])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -69,6 +72,15 @@ angular.module('starter.controllers', ['starter.services'])
 		console.log('BlogUserCtrl.failure -- response:', response, response.$promise);
 	});
 })
+
+
+///video controller
+.controller('VideoCtrl', function($scope, $stateParams, $filter, VideoService) {
+	console.log('VideoCtrl:', $stateParams);
+	$scope.videoUrl = $filter('base64_decode')($stateParams.videoId);
+	console.log('url:', $scope.videoUrl);
+})
+
 
 //semicolon must come last
 ;
