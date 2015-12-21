@@ -61,78 +61,13 @@ var starter = angular.module('starter', [
 		}
 	})
 
-
-	.state('app.search', {
-		url: '/search',
-		views: {
-			'menuContent': {
-				templateUrl: 'templates/search.html'
-			}
-		}
-	})
-
-	.state('app.browse', {
-		url: '/browse',
-		views: {
-			'menuContent': {
-				templateUrl: 'templates/browse.html'
-			}
-		}
-	})
-
-	//post states
-	.state('app.posts', {
-		url: "/posts",
-		views: {
-				'menuContent': {
-						templateUrl: "templates/posts.html",
-						controller: 'BlogPostListCtrl'
-				}
-		}
-	})
-
+	//single post view
 	.state('app.post', {
 		url: "/posts/:postId",
 		views: {
 				'menuContent': {
 					templateUrl: "templates/post.html",
 					controller: 'BlogPostCtrl'
-			}
-		}
-	})
-
-
-	//tag states
-	.state('app.tags', {
-		url: "/tags",
-		views: {
-				'menuContent': {
-						templateUrl: "templates/tags.html",
-						controller: 'BlogTagListCtrl'
-				}
-		}
-	})
-
-
-
-
-	//user states
-	.state('app.users', {
-		url: "/users",
-		views: {
-				'menuContent': {
-						templateUrl: "templates/users.html",
-						controller: 'BlogUserListCtrl'
-				}
-		}
-	})
-
-	.state('app.user', {
-		url: "/users/:userId",
-		views: {
-				'menuContent': {
-					templateUrl: "templates/user.html",
-					controller: 'BlogUserCtrl'
 			}
 		}
 	})
