@@ -29,6 +29,13 @@ var starter = angular.module('starter', [
 	});
 })
 
+.config(function ($sceDelegateProvider) {
+		$sceDelegateProvider.resourceUrlWhitelist([
+			'self', new RegExp('^(http[s]?):\/\/(w{3}.)?youtube\.com/embed/.+$'),
+			'self', new RegExp('^(http[s]?):\/\/(w{3}.)?player.vimeo\.com/.+$')
+		]);
+})
+
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 
