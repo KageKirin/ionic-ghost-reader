@@ -7,6 +7,7 @@
 var starter = angular.module('starter', [
 	'ionic',
 	'ngSanitize',
+	'starter.endpoints',
 	'starter.controllers',
 ])
 
