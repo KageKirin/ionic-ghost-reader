@@ -1,0 +1,14 @@
+{
+	"videos":{
+		"vimeo-test": {
+			"id":1,
+			"name":"vimeo-test",
+			"url":"http://player.vimeo.com/video/66140585"
+		},
+		"youtube-test":{
+			"id":2,
+			"name":"youtube-test",
+			"url":"http://www.youtube.com/embed/QILiHiTD3uc"
+		}
+	}
+}
