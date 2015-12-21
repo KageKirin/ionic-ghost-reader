@@ -131,9 +131,9 @@ var starter = angular.module('starter', [
 		}
 	})
 
-
 	//closing semicolon follows
 	;
+
 	// if none of the above states are matched, use this as the fallback
-	$urlRouterProvider.otherwise('/app/playlists'); // obsolete
+	$urlRouterProvider.otherwise('/app/cover');
 });
