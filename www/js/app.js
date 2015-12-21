@@ -10,6 +10,7 @@ var starter = angular.module('starter', [
 	'starter.endpoints',
 	'starter.globals',
 	'starter.controllers',
+	'starter.filters'
 ])
 
 .run(function($ionicPlatform) {
