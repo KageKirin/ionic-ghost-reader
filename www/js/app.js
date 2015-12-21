@@ -32,11 +32,12 @@ var starter = angular.module('starter', [
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 
-		.state('app', {
+	//state for left sidemenu
+	.state('app', {
 		url: '/app',
 		abstract: true,
-		templateUrl: 'templates/menu.html',
-		controller: 'AppCtrl'
+		templateUrl: 'templates/taglist_sidemenu.html',
+		controller: 'BlogTagListCtrl'
 	})
 
 	.state('app.search', {
