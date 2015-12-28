@@ -1,6 +1,6 @@
 {
-	"name": "ionic-frontend",
-	"app_id": "",
+	"name": "ionic-ghost-reader",
+	"app_id": "e24a984d",
 	"proxies": [
 		{
 			"path": "/api/posts",
