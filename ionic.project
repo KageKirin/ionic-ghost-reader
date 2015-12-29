@@ -1,22 +1,22 @@
 {
-	"name": "ionic-ghost-reader",
-	"app_id": "e24a984d",
-	"proxies": [
-		{
-			"path": "/api/posts",
-			"proxyUrl": "https://kyokushindoapp.herokuapp.com/ghost/api/v0.1/posts/"
-		},
-		{
-			"path": "/api/tags",
-			"proxyUrl": "https://kyokushindoapp.herokuapp.com/ghost/api/v0.1/tags/"
-		},
-		{
-			"path": "/api/users",
-			"proxyUrl": "https://kyokushindoapp.herokuapp.com/ghost/api/v0.1/users/"
-		},
-		{
-			"path": "/api/blog",
-			"proxyUrl": "https://kyokushindoapp.herokuapp.com/"
-		}
-	]
+  "name": "ionic-ghost-reader",
+  "app_id": "e24a984d",
+  "proxies": [
+    {
+      "path": "/api/posts",
+      "proxyUrl": "https://kyokushindoapp.herokuapp.com/ghost/api/v0.1/posts/"
+    },
+    {
+      "path": "/api/tags",
+      "proxyUrl": "https://kyokushindoapp.herokuapp.com/ghost/api/v0.1/tags/"
+    },
+    {
+      "path": "/api/users",
+      "proxyUrl": "https://kyokushindoapp.herokuapp.com/ghost/api/v0.1/users/"
+    },
+    {
+      "path": "/api/blog",
+      "proxyUrl": "https://kyokushindoapp.herokuapp.com/"
+    }
+  ]
 }

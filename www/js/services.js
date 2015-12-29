@@ -56,17 +56,17 @@ angular.module('starter.services', ['ngResource', 'starter.endpoints', 'starter.
 				method:'GET',
 				isArray:false,
 				cache: true
-		 },
-		 'get': {
-			 method:'GET',
-			 isArray:false,
-			 cache: true,
-			 params: {
-				 videoId:'@videoId'
-			 }
-		 }
-	 },
-	 {}
+			},
+			'get': {
+				method:'GET',
+				isArray:false,
+				cache: true,
+				params: {
+					videoId:'@videoId'
+				}
+			}
+		},
+		{}
  );
 })
 
