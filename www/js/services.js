@@ -2,7 +2,7 @@ angular.module('starter.services', ['ngResource', 'starter.endpoints', 'starter.
 
 .factory('BlogService', function ($resource, GhostBlogEndpoint) {
 	console.log('GhostBlogEndpoint.url:', GhostBlogEndpoint.url);
-	return $resource(GhostBlogEndpoint.url,
+	return $resource(GhostBlogEndpoint.url + '/:type/:id/',
 		{},
 		{
 			'query': {
@@ -14,9 +14,8 @@ angular.module('starter.services', ['ngResource', 'starter.endpoints', 'starter.
 			 method:'GET',
 			 isArray:false,
 			 cache: true,
-			 url: GhostBlogEndpoint.url + '/:postId/',
 			 params: {
-				 postId:'@postId'
+				 id:'@id'
 				 //include:'author,tags'
 			 }
 		 },
@@ -24,9 +23,9 @@ angular.module('starter.services', ['ngResource', 'starter.endpoints', 'starter.
 			 method:'GET',
 			 isArray:false,
 			 cache: true,
-			 url: GhostBlogEndpoint.url + '/tag/:tagId/',
 			 params: {
-				 tagId:'@tagId'
+				 id:'@id',
+				 type:'tag'
 				 //include:'count.posts'
 			 }
 		 },
@@ -34,9 +33,9 @@ angular.module('starter.services', ['ngResource', 'starter.endpoints', 'starter.
 			 method:'GET',
 			 isArray:false,
 			 cache: true,
-			 url: GhostBlogEndpoint.url + '/author/:userId/',
 			 params: {
-				 userId:'@userId'
+				 id:'@id',
+				 type:'author'
 				 //include:'count.posts'
 			 }
 		 }

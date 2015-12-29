@@ -40,7 +40,7 @@ angular.module('starter.controllers', [
 // single controllers
 .controller('BlogPostCtrl', function($scope, $stateParams, BlogService) {
 	console.log('BlogPostCtrl:', $stateParams);
-	var response = BlogService.get_post({postId: $stateParams.postId}, function() {
+	var response = BlogService.get_post({id: $stateParams.postId}, function() {
 		console.log('BlogPostCtrl.success -- response:', response);
 		$scope.post = response.posts[0];
 	},
@@ -51,7 +51,7 @@ angular.module('starter.controllers', [
 
 .controller('BlogTagCtrl', function($scope, $stateParams, BlogService) {
 	console.log('BlogTagCtrl:', $stateParams);
-	var response = BlogService.get_tag({tagId: $stateParams.tagId}, function() {
+	var response = BlogService.get_tag({id: $stateParams.tagId}, function() {
 		console.log('BlogTagCtrl.success -- response:', response);
 		$scope.tag = response.tags[0];
 		$scope.posts = response.posts;
@@ -63,7 +63,7 @@ angular.module('starter.controllers', [
 
 .controller('BlogUserCtrl', function($scope, $stateParams, BlogService) {
 	console.log('BlogUserCtrl:', $stateParams);
-	var response = BlogService.get_user({userId: $stateParams.userId}, function() {
+	var response = BlogService.get_user({id: $stateParams.userId}, function() {
 		console.log('BlogUserCtrl.success -- response:', response);
 		$scope.user = response.users[0];
 		$scope.posts = response.posts;
